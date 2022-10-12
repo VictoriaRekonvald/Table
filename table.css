@@ -1,0 +1,74 @@
+:root{
+    --ff-poppins: 'Poppins', sans-serif;
+}
+body{
+    background: #ababab4b;
+    text-align: center;
+}
+.headd{
+    color: #565656;
+    font-size: 20px;
+
+}
+
+.header{
+    font-size: 18px;
+}
+
+#search-text, #search-text1, #search-text2, #search-text3 {
+    background-color: #d2d2d2a7;
+    width: 76%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #edededa7; /* сірі границя */
+    margin-bottom: 12px; 
+  }
+
+table {
+    border-collapse: collapse;
+    color: #5d5d5d;
+    border-spacing: 0;
+    width: 99%;
+    border: 1px solid #d2d2d2a7;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+    width: auto;
+}
+
+.scroll-table-body {
+	height: 300px;
+	overflow-x: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(238, 238, 238, 0.568);
+}
+tr:nth-child(even){background-color: #d2d2d2c9}
+@media(max-width: 768px) {
+    .resp-tab thead {
+        display: none;
+        width: 100%;
+    }
+    .resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .resp-tab td {
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+    .resp-tab td span {
+        display: block;
+    }
+}
+@media(max-width: 480px) {
+    .resp-tab td {
+        width: 100%;
+    }
+}
